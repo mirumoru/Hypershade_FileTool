@@ -5,7 +5,10 @@
 ・テクスチャのプレビュー表示  
 ・読み込み先フォルダ開く  
 ・トゥーンマテリアルノードを生成  
-  
+
+《ダウンロード》  
+CodeをクリックしてDownload ZIPからダウンロードできます。　　
+
 《導入方法》  
 「Hypershade_FileTool」のフォルダーと「Hypershade_FileTool_in.py」を"C:\Users\{名前}\Documents\maya\2023\scripts"に入れてください。  
 Mayaのスプリクトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
