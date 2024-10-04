@@ -406,5 +406,5 @@ def create_hypershade_ui():
     #リストを表示
     update_file_node_list()
 
-# UIを作成(v0.6から不要になるただし、直接実行する場合は#を外す)
+# UIを作成(直接実行する場合は#を外す)
 #create_hypershade_ui()
