@@ -12,7 +12,7 @@ CodeをクリックしてDownload ZIPからダウンロードできます。　�
 《導入方法》  
 Maya2023で動作確認しています。  
 「Hypershade_FileTool」のフォルダーと「Hypershade_FileTool_in.py」を"C:\Users\{名前}\Documents\maya\2023\scripts"に入れてください。  
-Mayaのスプリクトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
+Mayaのスクリプトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
   
 《使い方》  
 起動するとファイル(File)テクスチャノードを読み込みます。  
