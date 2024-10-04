@@ -1,4 +1,4 @@
-# Hypershade_FileToo  
+# Hypershade_FileTool  
 《主な機能》  
 ・選択したテクスチャを再読み込み  
 ・全てのテクスチャを再読み込み  
