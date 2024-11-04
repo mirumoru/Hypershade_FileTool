@@ -9,6 +9,9 @@ Maya 2023で作成しています。それ以外バージョンでは正常に�
 ・読み込み先フォルダ開く  
 ・トゥーンマテリアルノードを生成  
 
+《ダウンロード》  
+CodeをクリックしてDownload ZIPからダウンロードできます。　
+  
   
 《更新内容》  
 ・「Hypershade_materialTool」を追加しました。  
@@ -27,17 +30,6 @@ Maya 2023で作成しています。それ以外バージョンでは正常に�
 ```
 を入力すると一発でフォルダーが開きます。  
 Mayaのスプリクトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
-  
-  
-《ダウンロード》  
-CodeをクリックしてDownload ZIPからダウンロードできます。　　
-  
-  
-《導入方法》  
-Maya2023で動作確認しています。  
-「Hypershade_FileTool」のフォルダーと「Hypershade_FileTool_in.py」を"C:\Users\{名前}\Documents\maya\2023\scripts"に入れてください。  
-Mayaのスクリプトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
-  
   
 日本語版の方は"C:\Users\{名前}\Documents\maya\2023\ja_JP\scripts"に入れると起動できるはずです。  
   
