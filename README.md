@@ -1,10 +1,12 @@
 # Hypershade_FileTool_v1.1  
+
 《主な機能》  
 ・選択したテクスチャを再読み込み  
 ・全てのテクスチャを再読み込み  
 ・テクスチャのプレビュー表示  
 ・読み込み先フォルダ開く  
 ・トゥーンマテリアルノードを生成  
+
   
 《更新内容》  
 ・「Hypershade_materialTool」を追加しました。  
@@ -19,6 +21,17 @@
 "C:\Users\{名前}\Documents\maya\2023\scripts"に入れてください。  
 ファイル名を指定して実行で"%USERPROFILE%\Documents\maya\2023\scripts"を入力すると一発でフォルダーが開きます。  
 Mayaのスプリクトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
+  
+  
+《ダウンロード》  
+CodeをクリックしてDownload ZIPからダウンロードできます。　　
+  
+  
+《導入方法》  
+Maya2023で動作確認しています。  
+「Hypershade_FileTool」のフォルダーと「Hypershade_FileTool_in.py」を"C:\Users\{名前}\Documents\maya\2023\scripts"に入れてください。  
+Mayaのスクリプトエディターを起動して「Hypershade_FileTool_in.py」登録して実行するとGUIが表示されます。  
+  
   
 日本語版の方は"C:\Users\{名前}\Documents\maya\2023\ja_JP\scripts"に入れると起動できるはずです。  
   
