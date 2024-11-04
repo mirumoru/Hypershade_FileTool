@@ -271,13 +271,26 @@ def call_toon_auto_tool(*args):
         # 相対インポートでToonAutoToolをインポート
         from . import ToonAutoTool
 
-        # モジュールをリロード
-        importlib.reload(ToonAutoTool)
+        # モジュールをロード
+        ToonAutoTool.toon_ui()
     except ImportError:
-        cmds.confirmDialog(title='インポートエラー', message='ToonAutoTool.pyがインポートできません\n'
+        cmds.confirmDialog(title='インポートエラー', message='ToonAutoTool.pyがインポートできませんでした\n'
                                 'この機能を使うには"ToonAutoTool.py"が必要です', button=['OK'])
 
-# ライセンス表示
+# Hypershade_materialToolを呼び出す
+def call_Hypershade_material_tool(*args):
+
+    try:
+        # 相対インポートでToonAutoToolをインポート
+        from . import Hypershade_materialTool
+
+        # モジュールをリロード
+        Hypershade_materialTool.create_shader_selector_ui()
+    except ImportError:
+        cmds.confirmDialog(title='インポートエラー', message='Hypershade_materialTool.pyがインポートできませんでした\n'
+                                'この機能を使うには"Hypershade_materialTool.py"が必要です', button=['OK'])
+
+# ライセンス表示(Hypershade_materialToolと共通)
 def show_license(*args):
     # ダイアログウィンドウが既に存在する場合は削除
     if cmds.window('license', exists=True):
@@ -324,7 +337,7 @@ def create_hypershade_ui():
     if cmds.window('hypershadeToolWindow', exists=True):
         cmds.deleteUI('hypershadeToolWindow')
 
-    window = cmds.window('hypershadeToolWindow', title="Hypershade File Tool", widthHeight=(280, 390))
+    window = cmds.window('hypershadeToolWindow', title="Hypershade File Tool", widthHeight=(280, 400))
     cmds.columnLayout(adjustableColumn=True)
 
     cmds.separator(height=10, style='none')
@@ -377,10 +390,17 @@ def create_hypershade_ui():
     # サーフェスシェーダー作成ボタン
     cmds.button(label="テクスチャを選択してサーフェスシェーダーを作成", command=file_browse_callback)
     cmds.separator(height=3, style='none') #隙間
+
     # 未使用のノードを削除する
     cmds.button(label="未使用のノードを削除する", command=delete_unused_nodes)
+
     cmds.separator(height=3, style='none') #隙間
+    # Toon auto-create toolを表示
     cmds.button(label="Toon auto-create toolを表示", command=call_toon_auto_tool)
+    cmds.separator(height=3, style='none') #隙間
+
+    # Hypershade Material Selection Toolを表示
+    cmds.button(label="Hypershade Material Toolを表示", command=call_Hypershade_material_tool)
     cmds.setParent('..')
     cmds.setParent('..')
 
@@ -392,8 +412,8 @@ def create_hypershade_ui():
     cmds.text(label="スクリプト名:Hypershade File Tool",align='left')
     cmds.text(label="作成者:mirumoru, GPT-4o",align='left')
     cmds.text(label="作成日:2024年9月5日",align='left')
-    cmds.text(label="更新日:2024年10月4日",align='left')
-    cmds.text(label="バージョン:v1.0(配布用)",align='left')
+    cmds.text(label="更新日:2024年11月04日",align='left')
+    cmds.text(label="バージョン:v1.1",align='left')
     cmds.text(label="ライセンス:MIT License",align='left')
     cmds.separator(height=5, style='none')
     # ボタンを作成し、クリック時にshow_license関数を呼び出す
