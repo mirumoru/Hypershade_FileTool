@@ -1,11 +1,10 @@
 import maya.cmds as cmds
 import maya.mel as mel
 import subprocess
-import importlib
 import time
 import os
 
-# ファイルノードを取得してUIにリスト表示する関数
+# ファイルノードを取得してUIに選択リスト表示する関数
 def update_file_node_list():
     file_nodes = cmds.ls(type='file')
 
@@ -133,8 +132,7 @@ def preview_texture(*args):
 
         initial_width = cmds.intField('widthField', query=True, value=True)
         initial_height = cmds.intField('heightField', query=True, value=True)
-
-        cmds.iconTextButton(image=file_path, width=initial_width, height=initial_height)
+        cmds.image(image=file_path, width=initial_width, height=initial_height)
         cmds.showWindow(window)
     else:
         cmds.warning("選択されたノードにファイルが設定されていません")
@@ -412,19 +410,19 @@ def create_hypershade_ui():
     cmds.text(label="スクリプト名:Hypershade File Tool",align='left')
     cmds.text(label="作成者:mirumoru, GPT-4o",align='left')
     cmds.text(label="作成日:2024年9月5日",align='left')
-    cmds.text(label="更新日:2024年11月04日",align='left')
-    cmds.text(label="バージョン:v1.1",align='left')
+    cmds.text(label="更新日:2024年12月30日",align='left')
+    cmds.text(label="バージョン:v1.2",align='left')
     cmds.text(label="ライセンス:MIT License",align='left')
     cmds.separator(height=5, style='none')
-    # ボタンを作成し、クリック時にshow_license関数を呼び出す
+    # クリック時にshow_license関数を呼び出す
     cmds.button(label="License", command=show_license)
     cmds.setParent('..')
     cmds.setParent('..')
 
     cmds.showWindow(window)
 
-    #リストを表示
+    #選択リストを更新
     update_file_node_list()
 
-# UIを作成(直接実行する場合は#を外す)
+# UIを作成
 #create_hypershade_ui()

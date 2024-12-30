@@ -124,7 +124,7 @@ def toon_ui():
 #参考先:https://x.com/tajiman_vrc/status/1568527678554406913
 #作成者:mirumoru, GPT-4o
 #作成日:2024年9月5日
-#更新日:2024年11月04日
+#更新日:2024年9月17日
 
 #        MIT License
 #        Copyright (c) 2024 mirumoru
